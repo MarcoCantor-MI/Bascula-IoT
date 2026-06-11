@@ -1,0 +1,40 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.keyboard button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.keyboard button:hover {
+    background-color: #0056b3;
+}
+
+.keyboard button:active {
+    background-color: #003f7f;
+}
+
+.keyboard button:nth-last-child(2), 
+.keyboard button:last-child {
+    background-color: #ff4d4d;
+}
+
+.keyboard button:nth-last-child(2):hover, 
+.keyboard button:last-child:hover {
+    background-color: #cc0000;
+}
